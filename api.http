@@ -1,0 +1,27 @@
+GET http://localhost:3333/products
+
+###
+POST http://localhost:3333/products
+Content-Type: application/json
+
+{
+    "name":"Livro DDD",
+    "price": 80,
+    "quantity": 5
+}
+
+###
+GET http://localhost:3333/products/750fe8b4-df2e-4dbc-a56a-3c1c66a56f48
+
+###
+PUT http://localhost:3333/products/750fe8b4-df2e-4dbc-a56a-3c1c66a56f48
+Content-Type: application/json
+
+{
+    "name":"Livro DDD",
+    "price": 80,
+    "quantity": 4
+}
+###
+DELETE http://localhost:3333/products/750fe8b4-df2e-4dbc-a56a-3c1c66a56f48
+
