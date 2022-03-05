@@ -11,6 +11,14 @@ Content-Type: application/json
 }
 
 ###
+POST http://localhost:3333/products
+Content-Type: application/json
+
+{
+
+}
+
+###
 GET http://localhost:3333/products/750fe8b4-df2e-4dbc-a56a-3c1c66a56f48
 
 ###
