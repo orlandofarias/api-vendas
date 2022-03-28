@@ -15,8 +15,8 @@ POST http://localhost:3333/sessions
 Content-Type: application/json
 
 {
-    "email":"leilafarias@gmail.com",
-    "password": "teste12345"
+    "email":"landofarias@gmail.com",
+    "password": "teste1234"
 }
 
 
@@ -88,8 +88,19 @@ Content-Type: image/png
 
 ###
 POST http://localhost:3333/password/forgot HTTP/1.1
-
 Content-Type: application/json
+
 {
     "email" : "landofarias@gmail.com"
 }
+
+###
+POST http://localhost:3333/password/reset
+Content-Type: application/json
+
+{
+    "token": "73e5f3e8-ed6a-46c1-9376-e017ef6a18c2",
+    "password" : "teste1234",
+    "password_confirmation" : "teste1234"
+}
+
